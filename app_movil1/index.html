@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de App Móvil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            Mi App Móvil
+        </header>
+
+        <!-- Contenedor de contenido dinámico -->
+        <div id="content"></div>
+        <div id="result"></div>
+        <div id="stick"></div>
+        <!-- Barra de navegación inferior -->
+        <div class="bottom-bar">
+            <button onclick="changeContent('home')" class="active">
+                <img src="img/home.png" alt="Home" style="width: 50px; height: 50px;">
+            </button>
+            <button onclick="changeContent('stadistics')" class="active">
+                <img src="img/stadistics.png" alt="stadistics" style="width: 50px; height: 50px;">
+            </button>
+            <button onclick="changeContent('ai')" class="active">
+                <img src="img/ai.png" alt="ai" style="width: 50px; height: 50px;">
+            </button>
+            <button onclick="changeContent('documents')" class="active">
+                <img src="img/documents.png" alt="documents" style="width: 50px; height: 50px;">
+            </button>
+            <button onclick="changeContent('podcast')" class="active">
+                <img src="img/podcast.png" alt="podcast" style="width: 50px; height: 50px;">
+            </button>
+
+            <!--<button onclick="startVoiceChat()">🔊 Conversar</button>
+            <button onclick="changeContent('search')">🔍</button>
+            <button onclick="changeContent('notifications')">🔔</button>
+            <button onclick="changeContent('messages')">✉️</button>
+            <button onclick="changeContent('settings')">⚙️</button>-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
