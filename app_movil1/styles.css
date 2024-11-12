@@ -1,0 +1,165 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    margin: 0;
+}
+
+.app-container {
+    width: 400px;
+    height: 780px;
+    background-image: url('img/iphone.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 36px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#stick {
+
+    height: 400px; /* Altura fija */
+    overflow: auto; /* Permitir desplazamiento */    
+    position: absolute;
+    display: none;
+    top: 450px;
+    transform: translateY(-50%);
+    padding: 40px;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    color: #ffffff;
+    overflow-y: auto; /* Habilitar el scroll vertical */
+    scrollbar-width: none; /* Oculta el scroll en Firefox */
+}
+
+
+header {
+    padding: 10px;
+    color: #FF6B19;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 26px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFF;
+    height: 580px; /* Altura fija para el contenedor de imágenes */
+    overflow-y: auto; /* Habilitar el scroll vertical */
+    scrollbar-width: none; /* Oculta el scroll en Firefox */
+}
+
+#result {
+    display: none;
+    flex-grow: 1;
+    padding: 26px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFF;
+    height: 580px; /* Altura fija para el contenedor de imágenes */
+    overflow-y: auto; /* Habilitar el scroll vertical */
+    scrollbar-width: none; /* Oculta el scroll en Firefox */
+}
+
+
+
+#content::-webkit-scrollbar {
+    display: none; /* Oculta el scroll en Chrome, Safari y Edge */
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.bottom-bar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.bottom-bar button.active {
+    color: #6200ea;
+}
+
+/* Agregar algún estilo para el nuevo botón si es necesario */
+.bottom-bar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.bottom-bar button.active {
+    color: #6200ea;
+}
+
+#documentList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Espacio entre el título y la lista */
+}
+
+#documentList li {
+    margin-bottom: 10px; /* Espacio entre cada enlace de documento */
+    color: white; /* Texto blanco en los elementos de la lista */
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#documentList li:hover {
+    color: #FF6B19; /* Cambiar a naranja cuando se pasa el cursor por encima */
+}
+
+#documentList li.active {
+    color: #FF6B19; /* Cambiar a naranja cuando se hace clic en un elemento */
+}
+
+#documentList h2 {
+    color: #FF6B19; /* El título 'Documentos' en naranja */
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#pdfViewer {
+    margin-top: 20px; /* Espacio adicional para el visor de PDF */
+}
+
+#imageContainer img {
+    display: block;
+    width: 100%; /* Ajustar el ancho de cada imagen */
+}
